@@ -1,0 +1,1 @@
+SUM the column or any manipulation on AGGREGATE: If you want to sum the columns then right click on that column and then click on insert and then you will find "Summary" there you can add it.
