@@ -1,1 +1,7 @@
-SUM the column or any manipulation on AGGREGATE: If you want to sum the columns then right click on that column and then click on insert and then you will find "Summary" there you can add it.
+1. SUM the column or any manipulation on AGGREGATE: 
+
+If you want to sum the columns then right click on that column and then click on insert and then you will find "Summary" there you can add it.
+
+2. If you want to sort by a particular column all the records then best way is to create a group by related to that column and delete the header as you just want the data 
+to be sorted you do not actually want the data to be grouped individually. One grouping is done then right click on that section and then click on Supress and it will make
+sure that grouping does not take up any space. 
