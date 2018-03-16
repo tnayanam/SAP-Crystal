@@ -8,4 +8,23 @@ sure that grouping does not take up any space.
 
 3. SORT - Go to record sort expert and use it.
 
+4. Positive data and Negative data Grouping:
+Now in this case suppose you have a balance column and you want to group + and - amounts together. then there is no easy way to do it. So we can create a formula and then we would have to do sorting based on that.
+So baiscally we will assign some sort of indicator to + balances and another indicator to -ve balances. Once that is done we can use that indicator to group by.
+
+Formula:Name: @LessThan =  If {rptTenant.decBalance} < 0 Then 1 else 0
+Now we will group the records of group by @LessThan
+Also now we would like to total the groups and also the grand total in the end. Ideally this is taken care automatically. if you use step 1 of this document. But suppose you want different texts in the
+report for the sum of different groups then you can follow like below.
+Add a NEW FOrmula for displaying labels and add it just near the summation field in report where sum is getting caculated.
+Formula: Name: @Label = If {@LessThan} = 1 then "Total Credit Balance" Else "Accounts Receivable"
+Output
+
+-20
+-30
+ Accounts Receivable = -50
+ 20
+ 40
+ Total Credit Balance = 60
+
 
