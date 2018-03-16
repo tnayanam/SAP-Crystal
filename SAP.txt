@@ -1,4 +1,4 @@
-1. SUM the column or any manipulation on AGGREGATE: 
+1. SUM - the column or any manipulation on AGGREGATE: 
 
 If you want to sum the columns then right click on that column and then click on insert and then you will find "Summary" there you can add it.
 
@@ -8,7 +8,7 @@ sure that grouping does not take up any space.
 
 3. SORT - Go to record sort expert and use it.
 
-4. Positive data and Negative data Grouping:
+4. Group - Positive data and Negative data Grouping:
 Now in this case suppose you have a balance column and you want to group + and - amounts together. then there is no easy way to do it. So we can create a formula and then we would have to do sorting based on that.
 So baiscally we will assign some sort of indicator to + balances and another indicator to -ve balances. Once that is done we can use that indicator to group by.
 
@@ -26,5 +26,44 @@ Output
  20
  40
  Total Credit Balance = 60
+5. Only One Entry from One to many tables Inner Join- Suppose you have a one to many relationship table like below:
+
+rptTenant 
+idTenant firstName
+1          Akash
+2          Syrasoft
+
+tblFitran
+idFitran   idTenant   Amount
+1            1          12300
+2            1           458
+3            2          415
+4            2          1257
+
+Select * from rptTenant inner join tblFitran on rptTenant.idTenant = tblFitran.idTenant;
+
+Now this will result in like below ##
+
+rptTenant 
+idTenant firstName idFitran    Amount
+1          Akash    1           12300
+1          Akash    2           458
+2          Syrasoft 3           415
+2          Syrasoft 4           1257
+
+but in reoport they only want to see one column per tenant with max amount. Expected output:
+
+rptTenant 
+idTenant firstName idFitran    Amount
+1          Akash    1           12300
+2          Syrasoft 4           1257
+
+So best way is create a subreport for displaying the data of tblFitran.
+Once you do that you will still save same output ##
+Now in the subreport Supress all the columns there. and in the detail section add Max of (Amount)
+so now in subreport only max of amount will be shown pertaining to every rptTenant
+
+
+
 
 
