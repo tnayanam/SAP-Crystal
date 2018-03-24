@@ -72,6 +72,8 @@ Just go to that section and right click and go o Section Expert and then in the 
 8. Hide certain row values. For examplke you dont want to show when a columns value is 0. In that case just go to that field
 and right clikc and in Number tab tick mark "supress if zero"
 
+9. Hide a Section Completely: Just right click on that section and Supress it.
+
 
 
 
