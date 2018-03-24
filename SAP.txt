@@ -63,6 +63,10 @@ Once you do that you will still save same output ##
 Now in the subreport Supress all the columns there. and in the detail section add Max of (Amount)
 so now in subreport only max of amount will be shown pertaining to every rptTenant
 
+6. Keep fields together:
+If you want to keep fields together then just right click and add a text field. And in that drag the columns you want to keep together.
+
+
 
 
 
