@@ -67,7 +67,10 @@ so now in subreport only max of amount will be shown pertaining to every rptTena
 If you want to keep fields together then just right click and add a text field. And in that drag the columns you want to keep together.
 
 7. Conditional Supression of a section:
-Just go to that section and right click and go o Section Expert and then in the Supress Row click on X2 Button and add the supression formula there.
+Just go to that section and right click and go o Section Expert and then in the Supress Row click on X2 Button and add t he supression formula there.
+
+8. Hide certain row values. For examplke you dont want to show when a columns value is 0. In that case just go to that field
+and right clikc and in Number tab tick mark "supress if zero"
 
 
 
