@@ -78,8 +78,10 @@ and right clikc and in Number tab tick mark "supress if zero"
 ====================================================================================================================================================
 Do the groupby properly and then go to Deatils section and then right click and go to Section Expert and then go to supress and then click on X2 and add formula as RecordNumber > 1
 ====================================================================================================================================================
-													Show only 
+													Running total 
 ====================================================================================================================================================
+Suppose you want a running total just add it at the section you want and it wil work.
+But suppose you want to reset the running total in each gruop change then edit the runing total and see the option as "Evaluate" and "Reset" and change them according to your need.
 
 
 
